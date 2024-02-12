@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Colour Mixer</title>
+        <!-- Linking external files -->
+        <link href="style.css" rel="stylesheet" />
+        <script src="script.js" defer></script>
+    </head>
+
+    <body>
+        <h1>Colour Mixer</h1>
+        <!-- Application Instructions -->
+        <p>Move the sliders below to make a colour of your choice!</p>
+        <label for="red">Red</label>
+        <input id="red" type="range" min="0" max="255" value="0" />
+        <label for="green">Green</label>
+        <input id="green" type="range" min="0" max="255" value="0" />
+        <label for="blue">Blue</label>
+        <input id="blue" type="range" min="0" max="255" value="0" />
+        <!-- A colour reset button -->
+        <button onClick="resetValues()">Reset</button>
+        <p>
+            This script will enable the user to adjust the below range input
+            elements to modify the
+            <abbr title="Red, Green, Blue">RGB</abbr> values of the
+            <code>background-color</code> CSS property of the HTML element.
+        </p>
+    </body>
+</html>
